@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CameraCAM</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boostrap css -->
+     <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+     <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+     <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "Images/Camera Logo.jpg" alt = "site icon" style="max-width: 200px; max-height: 200px">
+                <span class = "text-uppercase fw-lighter ms-2">CameraCAM</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#header">Home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#cameras">Cameras</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#lenses">Lenses</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#blogs">Blogs</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">About Us</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#accesories">Accesories+</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#newsletter">Updates</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+    <!-- End of Navbar -->
+
+    <!-- Header -->
+    <header id="header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center carousel-item active">
+                <h2 class = "text-capitalize text-white">Cameras</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">Photo and Video</h1>
+                <a href = "#cameras" class = "btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class = "text-center carousel-item">
+                <h2 class = "text-capitalize text-white">Lens</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">Prime, Wide, and Telephoto</h1>
+                <a href = "#lenses" class = "btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class = "text-center carousel-item">
+                <h2 class = "text-capitalize text-white">Accesories</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">Amazing Deals</h1>
+                <a href = "#accesories" class = "btn mt-3 text-uppercase">shop now</a>
+            </div>
+        </div>
+
+        <button class = "carousel-control-prev" type = "button" data-bs-target = "#header" data-bs-slide = "prev">
+            <span class = "carousel-control-prev-icon"></span>
+        </button>
+        <button class = "carousel-control-next" type = "button" data-bs-target = "#header" data-bs-slide = "next">
+            <span class = "carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Cameras -->
+    <section id = "cameras" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+                <h2 class = "position-relative d-inline-block">Cameras</h2>
+            </div>
+
+            <div class = "row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Best Sellers</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Featured</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">New Arrival</button>
+                </div>
+
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/001 CSLR-EOSR50KT1-500x500.jpeg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Canon EOS R50 with 18-45mm Kit</p>
+                            <span class = "fw-bold">₱47,498.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/002 Sony A7 III Body Plain 2024-500x500.jpeg" class = "w-100">
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Sony Alpha A7 III Body</p>
+                            <span class = "fw-bold">₱94,999.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/003 A7 IV Kitlens Plain 2024-500x500.jpeg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">New</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Sony Alpha A7 IV 28-70mm Kit</p>
+                            <span class = "fw-bold">₱144,999.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/004 CSLR-EOSR10KT2-500x500.jpeg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Canon EOS R10 with 18-45mm Kit</p>
+                            <span class = "fw-bold">₱62,698.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/005 KDKEKTAR-KDKRK0113-500x500.jpeg" class = "w-100">
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Kodak Ektar H35 Half Frame Film Camera</p>
+                            <span class = "fw-bold">₱2,649.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/006 ZV E10 Plain 2024-500x500.jpeg" class = "w-100">
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Sony ZV-E10 16-50mm Vlogging Camera</p>
+                            <span class = "fw-bold">₱40,849.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/007 A7 IV Body Plain 2024-500x500.jpeg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">New</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Sony Alpha A7 IV Body</p>
+                            <span class = "fw-bold">₱139,999.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/008 Lumix G100 w 12 32 w Grip Plain 2024-500x500.jpeg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Panasonic Lumix G100 with 12-32mm with Grip</p>
+                            <span class = "fw-bold">₱50,340.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/009 CSLR-EOSR10KT2-500x500.jpeg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Canon EOS R10 with 18-45mm Kit</p>
+                            <span class = "fw-bold">₱62,698.00</span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "Images/010 Sony ZV E10 II Kitlens 2 Colors Plain 2024-500x500.jpeg" class = "w-100">
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Sony ZV-E10 II Mirrorless Camera with 16-50mm Lens Kit</p>
+                            <span class = "fw-bold">₱65,999.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Cameras -->
+
+    <!-- Offers -->
+    <section id = "offer" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-white">get updates to our offers?</span>
+                    <h2 class = "mt-2 mb-4 text-white">Subscribe Now</h2>
+                    <a href = "#popular" class = "btn">Sign up</a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- End of Offers -->
+
+    <!-- Lenses -->
+    <section id = "lenses" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Camera Lens</h2>
+            </div>
+
+            <div class = "special-list row g-o">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "Images/016 Canon Lens.jpeg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Canon RF24mm f/1.8 MACRO IS STM</p>
+                        <span class = "fw-bold d-block">₱45,998.00</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "Images/017 Canon Lens.jpeg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Canon RF28-70mm f/2.8 IS STM</p>
+                        <span class = "fw-bold d-block">₱72,598.00</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "Images/018 Canon Lens.jpeg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Canon RF100-300mm f/2.8L IS USM</p>
+                        <span class = "fw-bold d-block">₱499,900.00</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "Images/019 Sony lens.jpeg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Sony FE 16 mm F1.8 G</p>
+                        <span class = "fw-bold d-block">₱52,300.00</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "Images/020 Sony lens.jpeg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Sony FE 28-70 mm F2 GM</p>
+                        <span class = "fw-bold d-block">₱177,990.00</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "Images/021 Sony lens.jpeg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Sony FE 85 mm F1.4 GM II</p>
+                        <span class = "fw-bold d-block">₱115,990.00</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End of Lenses -->
+
+    <!-- Offers -->
+     <section id = "offers" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-white">Discount Up to 20%</span>
+                    <h2 class = "mt-2 mb-4 text-white">Big Sale Offer</h2>
+                    <a href = "#popular" class = "btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- End of Offers -->
+
+    <!-- Blogs -->
+    <section id = "blogs" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "Images/102.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Camera and The Photographer</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>Aaron Martinez
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "Images/104.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Significance of Camera lenses</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>Jacob Curt Malabanan
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "Images/101.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Landscape Photography</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>Albert Rey Dela Cruz
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End of Blogs  -->
+
+    <!-- About Us -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class = "lead text-muted">a group of camera enthusiasts passionate to share our love for cameras and creativity.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "Images/AboutUs002.jpg" alt = "" class = "img-fluid">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About Us -->
+
+    <!-- Accesories -->
+    <section id = "accesories" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Popular Accesories and More for this Year</h2>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Top Rated</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/011 BEDS-6-3-500x500.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Peak Design Everyday Sling Camera Bag 6L</p>
+                            <span class = "fw-bold d-block">₱9,500.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/012 AL-4 ANCHOR LINKS-500x500.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Peak Design Anchor Links AL-4</p>
+                            <span class = "fw-bold d-block">₱2,150.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/013 5947C0015946C0017001C001-500x500.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Canon Powershot V10 Camera</p>
+                            <span class = "fw-bold d-block">₱20,898.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Best Selling</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/014 505514-54-500x500.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Billingham Ten-16 (Burgundy/Choc)</p>
+                            <span class = "fw-bold d-block">₱9,999.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/015 DLEB450N-500x500.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Dulepro Explorer B450N Black Backpack </p>
+                            <span class = "fw-bold d-block">₱4,950.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/015.2 Fujifilm.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Fujifilm X-T50 16-50mm Kit Digital Mirrorless Camera </p>
+                            <span class = "fw-bold d-block">₱108,550.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Lowest Price</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/022 Viltrox 28mm Lens.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Viltrox AF 28mm F4.5 Lens for Fujifilm X-Mount</p>
+                            <span class = "fw-bold d-block">₱4,999.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/023 TTArtisans 35.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">TT Artisan AF 35mm F1.8 II Lens for Fujifilm X</p>
+                            <span class = "fw-bold d-block">₱6,498.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Images/024 Fujinon Lens.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Fujifilm XF 50mm F1.0 R WR Lens</p>
+                            <span class = "fw-bold d-block">₱79,990.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End of Popular -->
+
+    <!-- Newsletter -->
+    <section id = "newsletter" class = "py-5">
+        <div class = "container">
+            <div class = "d-flex flex-column align-items-center justify-content-center">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+
+                <p class = "text-center text-muted">Stay updated to New arrivals, discounts, and coupons 
+                    as well as new blogs written by seasoned photographer, cinematographer, and more, tailored 
+                    to help us in our creative journey. labore et dolore magna aliqua. Ut enim ad minim 
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <div class = "input-group mb-3 mt-3">
+                    <input type = "text" class = "form-control" placeholder = "Enter Your Email ...">
+                    <button class = "btn btn-primary" type = "submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Newsletter -->
+
+    <!-- Footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">CameraCAM</a>
+                    <p class = "text-white text-muted mt-3">orem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "my-3">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Muralla Street, Intramuros, Manila.
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            camera.Cam@email.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            63+ 099999999999999
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div class = "d-flex">
+                        <ul class = "list-unstyled">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a> 
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a> 
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+
+    
+    <!-- jquery  -->
+     <script src = "js/jquery-3.7.1.js"></script>
+    <!-- Isotope js  -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+     <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custome js -->
+     <script src = "js/script.js"></script>
+</body>
+</html>
